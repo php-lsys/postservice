@@ -21,14 +21,14 @@ class File implements Loger{
      * 过滤种结果,默认存储全部
      * @param int $filter
      */
-    public function set_filter($filter){
+    public function setFilter($filter){
         $this->_filter=$filter;
         return $this;
     }
     public function add(Result $result){
         if ($this->_filter&Loger::FILTER_SUCC&&$result instanceof SuccResult)return false;
         if($result instanceof FailResult){
-            switch ($result->get_code()){
+            switch ($result->getCode()){
                 case FailResult::CODE_EMPTY:
                     if ($this->_filter&Loger::FILTER_EMPTY_FAIL)return false;
                 break;

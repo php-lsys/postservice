@@ -49,14 +49,14 @@ class FailResult extends Result{
      * 错误编码,参见常量
      * @return int
      */
-    public function get_code(){
+    public function getCode(){
         return $this->_code;
     }
     /**
      * 错误消息
      * @return string
      */
-    public function get_msg(){
+    public function getMsg(){
         return $this->_msg;
     }
 }

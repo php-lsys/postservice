@@ -15,7 +15,7 @@ interface Loger{
      * @param int $filter
      * @return $this
      */
-    public function set_filter($filter);
+    public function setFilter($filter);
     /**
      * 添加结果到日志
      * @param Result $data

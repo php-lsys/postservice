@@ -20,10 +20,10 @@ interface PostService{
      * 添加快递公司
      * @param Poster $poster
      */
-    public function add_poster(Poster $poster);
+    public function addPoster(Poster $poster);
     /**
      * 添加快递公司
      * @return Poster[]
      */
-    public function get_poster();
+    public function getPoster();
 }

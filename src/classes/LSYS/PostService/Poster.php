@@ -17,10 +17,10 @@ class Poster{
         $this->_local=$local_name;
         $this->_handler=$handler_name;
     }
-    public function local_name(){
+    public function localName(){
         return $this->_local;
     }
-    public function handler_name(){
+    public function handlerName(){
         return $this->_handler;
     }
     public function __toString(){

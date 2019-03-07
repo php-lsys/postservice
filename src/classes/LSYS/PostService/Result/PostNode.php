@@ -22,16 +22,16 @@ class PostNode implements \JsonSerializable{
         $this->_city_name=$city_name;
         $this->_city_code=$city_code;
     }
-    public function get_time(){
+    public function getTime(){
         return $this->_time;
     }
-    public function get_content(){
+    public function getContent(){
         return $this->_content;
     }
-    public function get_city_name(){
+    public function getCityName(){
         return $this->_city_name;
     }
-    public function get_city_code(){
+    public function getCityCode(){
         return $this->_city_code;
     }
     public function jsonSerialize (){

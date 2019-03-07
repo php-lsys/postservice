@@ -24,13 +24,13 @@ class SuccQueryResult extends SuccResult{
         $this->_sn=$sn;
         $this->_record=$record;
     }
-    public function get_poser(){
+    public function getPoser(){
         return $this->_poster;
     }
-    public function get_sn(){
+    public function getSn(){
         return $this->_sn;
     }
-    public function get_record(){
+    public function getRecord(){
         return $this->_record;
     }
 }

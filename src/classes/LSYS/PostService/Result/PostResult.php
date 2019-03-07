@@ -41,28 +41,28 @@ class PostResult{
      * 得到快递号
      * @return string
      */
-    public function get_sn(){
+    public function getSn(){
         return $this->_sn;
     }
     /**
      * 得到快递公司
      * @return \LSYS\PostService\Poster
      */
-    public function get_poser(){
+    public function getPoser(){
         return $this->_poster;
     }
     /**
      * 当前快递状态
      * @return string
      */
-    public function get_status(){
+    public function getStatus(){
         return $this->_status;
     }
     /**
      * 具体物流信息
      * @return PostNode[]
      */
-    public function get_record(){
+    public function getRecord(){
         return $this->_record;
     }
 }
