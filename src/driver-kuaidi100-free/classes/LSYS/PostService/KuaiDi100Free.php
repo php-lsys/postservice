@@ -70,7 +70,7 @@ class KuaiDi100Free implements PostService{
         $sn=$data['nu'];
         return new PostResult($poster, $sn, $status, $record);
     }
-    public function query($local_poser_name,$postno){
+    public function query(?string $local_poser_name,string $postno){
         $handler_name=null;
         foreach ($this->_poster as $v){
             if($v->localName()==$local_poser_name){

@@ -13,14 +13,14 @@ class Poster{
      * @param string $local_name 本地名
      * @param string $handler_name 远程名
      */
-    public function __construct($local_name,$handler_name){
+    public function __construct(?string $local_name,string $handler_name){
         $this->_local=$local_name;
         $this->_handler=$handler_name;
     }
-    public function localName(){
+    public function localName():?string{
         return $this->_local;
     }
-    public function handlerName(){
+    public function handlerName():string{
         return $this->_handler;
     }
     public function __toString(){

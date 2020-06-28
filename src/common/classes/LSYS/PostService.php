@@ -15,7 +15,7 @@ interface PostService{
      * @param string $postno
      * @return FailResult|SuccQueryResult
      */
-    public function query($local_poser_name,$postno);
+    public function query(?string $local_poser_name,string $postno);
     /**
      * 添加快递公司
      * @param Poster $poster

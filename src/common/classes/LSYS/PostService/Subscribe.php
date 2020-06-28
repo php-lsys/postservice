@@ -15,7 +15,7 @@ interface Subscribe{
      * @param string $postno
      * @return SuccResult|FailResult
      */
-    public function pullSubscribe($local_poser_name,$postno,$callback_url);
+    public function pullSubscribe(string $local_poser_name,string $postno,$callback_url);
     /**
      * 监听订阅
      * @return FailResult|SuccSubscribeResult
